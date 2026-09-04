@@ -18,8 +18,6 @@ from torch.utils.data.distributed import DistributedSampler
 PROJECT_DIR = Path(".").resolve()
 ARTIFACT_DIR = PROJECT_DIR / "mlartifacts"
 
-mlflow.set_tracking_uri(f"sqlite:///{(PROJECT_DIR / 'mlflow.db').as_posix()}")
-mlflow.set_experiment("CIFAR-10_Single-GPU")
 
 # CREATE DATASETS   
 def create_datasets():
