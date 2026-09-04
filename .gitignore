@@ -1,0 +1,25 @@
+# Python environment and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Downloaded data and generated training outputs
+/data/
+/models/
+/mlartifacts/
+/mlruns/
+/mlflow.db*
+*.log
+
+# Local credentials and environment settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# OS files
+.DS_Store
+Thumbs.db

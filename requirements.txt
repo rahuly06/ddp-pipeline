@@ -1,0 +1,13 @@
+numpy
+torch
+torchvision
+ipykernel
+matplotlib
+opencv-python
+requests
+tqdm
+seaborn
+scikit-learn
+mlflow
+psutil
+nvidia-ml-py
