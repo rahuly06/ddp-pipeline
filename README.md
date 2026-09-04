@@ -16,12 +16,12 @@ A learning project for training ResNet18 on CIFAR-10 with PyTorch, CUDA, Distrib
 Use Linux or WSL with NVIDIA GPU drivers and a compatible CUDA-enabled PyTorch installation. Run all commands from the project root.
 
 ```bash
-python3 -m venv .venv
+python3.12 -m venv .venv
 source .venv/bin/activate
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
-The dependencies are not version-pinned yet. Choose a PyTorch/torchvision build compatible with the host driver; the default installation may require a newer driver. See the [PyTorch installation guide](https://pytorch.org/get-started/locally/).
+Use Python 3.12. Direct dependencies are pinned to the local environment versions, with PyTorch and torchvision explicitly selecting CUDA 12.6 builds for the rented GPU host. The host must have a CUDA 12.6-compatible NVIDIA driver. Transitive dependencies are resolved by pip; this is not a complete dependency lockfile. See the [PyTorch installation guide](https://pytorch.org/get-started/locally/).
 
 Check GPU access before training:
 

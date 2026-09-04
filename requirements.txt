@@ -1,13 +1,17 @@
-numpy
-torch
-torchvision
-ipykernel
-matplotlib
-opencv-python
-requests
-tqdm
-seaborn
-scikit-learn
-mlflow
-psutil
-nvidia-ml-py
+# Direct dependencies pinned from the local Python 3.12 environment.
+# CUDA 12.6 builds for the rented Linux NVIDIA GPU instance.
+--extra-index-url https://download.pytorch.org/whl/cu126
+
+numpy==2.5.2
+torch==2.14.0+cu126
+torchvision==0.29.0+cu126
+ipykernel==7.3.0
+matplotlib==3.11.1
+opencv-python==5.0.0.93
+requests==2.34.2
+tqdm==4.70.0
+seaborn==0.13.2
+scikit-learn==1.9.0
+mlflow==3.16.0
+psutil==7.2.2
+nvidia-ml-py==13.610.43
