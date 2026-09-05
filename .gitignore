@@ -26,3 +26,6 @@ Thumbs.db
 
 # Notebook MLFlow
 /notebooks/mlruns/
+
+# Docker Output Run Files
+/docker-output/

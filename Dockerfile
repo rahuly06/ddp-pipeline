@@ -3,7 +3,7 @@ FROM pytorch/pytorch:2.14.0-cuda12.6-cudnn9-runtime
 WORKDIR /app
 
 COPY requirements-docker.txt .
-RUN python -m pip install --no-cache-dir -r requirements-docker.txt
+RUN python -m pip install --break-system-packages --no-cache-dir -r requirements-docker.txt
 
 COPY train.py .
 COPY README.md .
